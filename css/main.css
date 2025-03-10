@@ -22,15 +22,47 @@ a {
     text-decoration: unset;
 }
 
+.header-black-mode {
+    background-color: #2B3844;
+    color: white;
+}
+
 header {
     padding: 1.875rem 1rem;
     box-shadow: var(--shadow);
-
+    display: flex;
+    justify-content: space-between;
+    padding-right: 48px;
+    padding-left: 48px;
     h1 {
         margin: 0;
-        font-size: 0.875rem;
+        font-size: 24px;
+        font-weight: 700;
         font-weight: var(--fw-extra-bold);
     }
+}
+
+.dark-mode {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode:hover {
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.dark-mode span {
+    margin-right: 8px;
+    text-align: center;
+}
+
+.dark-mode span img {
+    width: 24px;
+    height: 24px;
 }
 
 .main-wrapper {
@@ -93,6 +125,12 @@ form {
     }
 }
 
+.select-input-darkmode option {
+    background-color: #2B3844;
+    color: white;
+    border: #2B3844 2px;
+}
+
 
 .results {
     padding-left: 3.5rem;
@@ -114,10 +152,27 @@ form {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: var(--shadow);
+    cursor: pointer;
 }
 
 .country-flag {
     margin-bottom: 1.5rem;
+}
+
+.big-country-flag {
+    max-width: 560px;
+    max-height: 401px;
+    margin-bottom: 80px;
+}
+
+.country-details-page {
+    color: black;
+}
+
+
+
+.country-details-new-page {
+
 }
 
 .country-details {
@@ -135,4 +190,26 @@ form {
     li span {
         font-weight: var(--fw-semi-bold);
     }
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.dark-mode-main {
+    background-color: #202C36;
+}
+
+.dark-mode-countrycard {
+    background-color: #2B3844;
+    color: white;
+}
+
+.dark-mode-seach-input {
+    background-color: #2B3844;
+    background: #2B3844;
 }
