@@ -162,18 +162,20 @@ form {
 .big-country-flag {
     max-width: 560px;
     max-height: 401px;
-    margin-bottom: 80px;
+    border-radius: 8px;
+    margin-top: 80px;
 }
 
 .country-details-page {
+    margin-top: 80px;
     color: black;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.4s;
 }
 
 
-
-.country-details-new-page {
-
-}
 
 .country-details {
     padding: 1rem;
@@ -212,4 +214,19 @@ form {
 .dark-mode-seach-input {
     background-color: #2B3844;
     background: #2B3844;
+}
+
+.back-button {
+    display: flex;
+    cursor: pointer;
+    width: 136px;
+}
+
+.new-page-information-country {
+    
+}
+
+.back-image {
+    display: flex;
+    margin-right: 8px;
 }

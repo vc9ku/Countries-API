@@ -113,14 +113,23 @@ fetch("https://restcountries.com/v3.1/all?fields=name,flags,capital,region,popul
 
                     const $countryImg = document.createElement("img");
 
-                    $countryDetailsPage.appendChild($countryImg);
                     $countryImg.classList.add("big-country-flag");
                     $countryImg.src = data[0].flags.svg;
                     
                     const $newPageInformationCountry = document.createElement("div");
                     $countryDetailsPage.appendChild($newPageInformationCountry);
 
-                    console.log($countryDetailsPage)
+                    console.log($newPageInformationCountry)
+                    $newPageInformationCountry.classList.add("new-page-information-country");
+                    $newPageInformationCountry.appendChild($countryImg);
+                    
+                    const $backButton = document.querySelector(".back-button");
+
+                    $backButton.addEventListener("click", function() {
+                        $countryDetailsPage.classList.add("hide");
+                        $mainWrapper.classList.remove("hide");
+                        $newPageInformationCountry.innerHTML = "";
+                    }) 
 
 
                 })
